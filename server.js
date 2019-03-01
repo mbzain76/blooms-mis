@@ -54,4 +54,8 @@ app.get('/', (req, res) => {
 //Require the students routes
 require('./routes/student.routes.js')(app);
 
+// listen for requests
+app.listen(port, () => {
+    console.log("Server is listening on port " + port);
+});
 
