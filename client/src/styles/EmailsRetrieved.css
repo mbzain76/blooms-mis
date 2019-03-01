@@ -1,0 +1,63 @@
+#center-retrieved{
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+#text-centered{
+    grid-column: 1/-1;
+   
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+
+#parent-count{
+   grid-column: 1/-1;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+
+    color: #000000
+}
+#guardian-count{
+   grid-column: 1/-1;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    
+    color: #000000
+}
+
+#btn-block{
+    grid-column: 1/-1;
+    display: flex;
+    
+
+}
+#cancel-btn{
+    margin: auto;
+    width: 125px;
+    height: 40px;
+    background-color: #ffffff;
+}
+#copy-btn{
+   margin: auto;
+    width: 125px;
+    height: 40px;
+    background-color: #44943e;
+    color: #ffffff;
+}

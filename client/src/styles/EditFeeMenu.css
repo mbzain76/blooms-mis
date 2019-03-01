@@ -1,0 +1,62 @@
+#path-container{
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr;
+
+}
+#back-icon{
+    padding-top: 2rem;
+    padding-left: 12px;
+    grid-column: 1;
+    width: 25px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+}
+
+#path-name{
+    grid-column: 2/4;
+    width: 35rem;
+  margin-top: 1.5rem;
+  height: 34px;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+#location{
+    opacity: 1 !important;
+}
+
+#icons-container{
+    grid-column: 6/-1;
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-template-columns: 1fr 1fr 25px 25px 25px 1fr;
+
+}
+#save{
+    grid-column: 4;
+    margin: 2.5rem;
+    
+}
+#erase{
+    grid-column: 5;
+    margin: 2.5rem;
+}
+#exit{
+    grid-column: 6;
+    margin: 2.5rem;
+}

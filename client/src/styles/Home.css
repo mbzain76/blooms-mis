@@ -1,0 +1,186 @@
+#daycare-card{
+    grid-column: 1/-1;
+    height: 125px;
+    grid-row: 1;
+    border-bottom: solid 1px rgba(218, 206, 206, 0.5);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+.checkMark{
+    grid-column: 1;
+    display: block;
+    margin: 3rem;
+    position: relative;
+    top: 5px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+
+}
+
+#daycare-cardTitle{
+    padding: 3rem;
+    width: 15rem;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    position: 'relative';
+    bottom: 28px;
+}
+.numberStudents{
+    grid-column: -1;
+    padding: 3rem;
+  width: 15rem;
+  height: 28px;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: right;
+  color: hsl(0, 0%, 0%);
+  
+  position: 'relative';
+  bottom: 28px;
+}
+
+#beginner-card{
+
+    grid-column: 1/-1;
+    height: 125px;
+    grid-row: 2;
+    border-bottom: solid 1px rgba(218, 206, 206, 0.5);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#beginner-cardTitle{
+    padding: 3rem;
+    width: 15rem ;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    
+}
+
+
+
+#PP1-card{
+
+    grid-column: 1/-1;
+    height: 125px;
+    grid-row: 3;
+    border-bottom: solid 1px rgba(218, 206, 206, 0.5);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#PP1-cardTitle{
+    padding: 3rem;
+    width: 15rem;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#PP2-card{
+
+    grid-column: 1/-1;
+    height: 125px;
+    grid-row: 4;
+    border-bottom: solid 1px rgba(218, 206, 206, 0.5);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#PP2-cardTitle{
+    padding: 3rem;
+    width: 15rem;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+
+#grade1-card{
+
+    grid-column: 1/-1;
+    height: 125px;
+    grid-row: 5;
+    border-bottom: solid 1px rgba(218, 206, 206, 0.5);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#grade1-cardTitle{
+    padding: 3rem;
+    width: 15rem;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#grade2-card{
+
+    grid-column: 1/-1;
+    height: 125px;
+    grid-row: -1;
+    border-bottom: solid 1px rgba(218, 206, 206, 0.5);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#grade2-cardTitle{
+    padding: 3rem;
+   
+    width: 15rem;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}

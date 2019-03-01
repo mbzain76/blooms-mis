@@ -1,0 +1,51 @@
+#container-box{
+    display: flex;  
+    width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#center-box{
+    margin:auto;
+  width: 80vw;
+  height: 60vh;
+  background-color: #ffffff;
+  display: flex;
+}
+
+#center-content{
+    margin: auto;
+
+}
+
+#retrieve-text{
+    width: 412px;
+    height: 39px;
+    font-size: 35px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#progress-numbers{
+    width: 412px;
+    height: 28px;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+#progress-bar{
+    
+  width: 412px;
+  height: 10px;
+  background-color: #036e08;
+}

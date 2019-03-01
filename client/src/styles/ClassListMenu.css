@@ -1,0 +1,61 @@
+.menu-classes{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  z-index: 10;
+  grid-column: 2/-1;
+   background-color: #ffffff;
+  grid-auto-rows: auto;
+  grid-column-gap: 15px;
+}
+
+#back-img-class{
+    grid-column: 1;
+    margin: 30px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+}
+
+#menu-title{
+    margin-top: 23px;
+    width: 20rem;
+  height: 34px;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.search{
+    display: none;
+}
+
+.searchIcon{
+   grid-column: 8;
+
+}
+.markIcon{
+    grid-column: 9;
+}
+.cardIcon{
+    grid-column: 10;
+}
+.pageName{
+    grid-column: 11;
+}
+.filter{
+    grid-column: 12;
+}

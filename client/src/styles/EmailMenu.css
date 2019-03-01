@@ -1,0 +1,33 @@
+.menu-email{
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: #ffffff;
+}
+
+#back-Img-email{
+    grid-column: 1;
+    margin: 30px;
+}
+
+.title-Menu-email{
+    grid-column: 2/5;
+    text-align: left;
+    margin-left: -8rem;
+    margin-top: 25px;
+}
+
+#student-Name-email{
+    position: absolute;
+    top: 15px;
+  width: 15rem;
+  height: 34px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}

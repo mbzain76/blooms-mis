@@ -1,0 +1,49 @@
+#pta{
+    width: 432px;
+  height: 28px;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 2.25rem;
+  grid-column: 1/-1;
+}
+
+.selected{
+  grid-column: 1/-1;
+display: flex;
+}
+
+#checkbox{
+  
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+  padding-top: 15px;
+}
+
+.check-text{
+  
+  width: 81px;
+  height: 28px;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}

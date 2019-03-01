@@ -1,0 +1,110 @@
+
+#pageTitle{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: grid;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2,80px);
+    padding: 30px;
+}
+#unpaidTitle{
+  padding: 30px;
+  width: 25rem;
+  height: 39px;
+  display: grid;
+  font-size: 35px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+
+    
+}
+
+#student-count{
+  grid-row: 2;
+  margin: 35px;
+  width: 15rem;
+  height: 28px;
+  opacity: 0.5;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+#fields{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 80px;
+    grid-template-areas: 'c s s s s s';
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.checkMark{
+    grid-area: 'c';
+    display: block;
+  width: 25px;
+  margin-left: 65px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+
+}
+
+#fullName{
+    grid-area: 's';
+    grid-column: 1/-1;
+    margin-top: 15px;
+    margin-left: 40px;
+  height: 28px;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+    padding: 20px;
+}
+
+#studentFullName{
+    height: 125px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column: 1/-1; 
+    border-bottom: solid 1px rgba(0,0,0,0.2);     
+}
+
+#full-name{
+    grid-column: 2;
+    margin-top: 49px;
+    margin-left: 59px; 
+  width: 175px;
+  height: 28px;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}

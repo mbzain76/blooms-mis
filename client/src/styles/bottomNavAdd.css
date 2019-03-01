@@ -1,0 +1,74 @@
+#bottom-nav{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 16px;
+       
+    
+    
+}
+
+#prev-nav{
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#prev-label{
+    margin-top: 10px;
+    width: 136px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+  padding-left: 10px;    
+}
+
+#delete-btn{
+    grid-column: 3/4;   
+  width: 125px;
+  height: 40px;
+    margin: auto;
+  background-color: #44943e;
+}
+
+#delete-text{
+    margin-top: 10px;
+     width: 49px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+ padding-left: 32.5px;
+  color: #ffffff;
+}
+
+#next-nav{
+    grid-column: 6;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#next-label{
+    margin-top: 10px;
+      width: 136px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: right;
+  color: #44943e;
+    padding-right: 10px;
+}

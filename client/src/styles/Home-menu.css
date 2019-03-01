@@ -1,0 +1,113 @@
+
+
+.menu-home{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  z-index: 10;
+  grid-column: 2/-1;
+   background-color: #ffffff;
+  grid-auto-rows: auto;
+  grid-column-gap: 5px;
+}
+
+#search{
+    margin-top: 26px;
+    grid-column: 8;
+    width: 200px;
+    height: 30px;
+    display: block;
+
+}
+#searchIcon {
+    grid-column: 9;
+       margin-top: 25px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+}
+
+#markIcon{
+    grid-column: 10;
+    margin-top: 25px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  font-size: 25px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #44943e;
+  
+}
+#pageName{
+    grid-column: 11;
+    margin-top: 30px;
+  width: 42px;
+  height: 21px;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.28;
+  letter-spacing: normal;
+  text-align: right;
+  color: #44943e;
+}
+
+#filter{
+    grid-column: 12;
+    margin-top: 25px;
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #44943e;
+}
+
+#filterDropList{
+    width: 109px;
+    height: 200px;
+    background: #ffffff;
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+#filterDropList li {
+  margin-top: 1rem;
+  height: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding: 20px;
+  text-decoration: none;
+}
+#filterDropList li:hover{
+    
+  width: 109px;
+  height: 32px;
+  background-color: #99c9ef;
+}
