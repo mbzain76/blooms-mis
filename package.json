@@ -28,8 +28,7 @@
     "reactstrap": "^7.1.0"
   },
   "scripts": {
-      
-    
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "server": "node server.js",
     "client": "cd client && yarn start",
       "start": "concurrently \"npm run server\" \"npm run client\""
