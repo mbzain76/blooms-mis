@@ -10,13 +10,7 @@ const path = require("path")
 // ... other app.use middleware 
 app.use(express.static(path.join(__dirname, "client", "build")))
 
-// ...
-// Right before your app.listen(), add this:
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
 
-app.listen(...)
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -29,14 +23,17 @@ app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
+
+
+
 // Configuring the database
-const dbConfig = require('./config/database.config.js');
+const MONGODB_URI = require('./config/database.config.js');
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
-mongoose.connect(dbConfig.url, {
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true
 }).then(() => {
     console.log("Successfully connected to the database");    
@@ -46,13 +43,15 @@ mongoose.connect(dbConfig.url, {
 });
 
 const port = process.env.PORT || 5000
-// define a simple route
-app.get('/', (req, res) => {
-    res.json({"message": "Welcome to bloomsfield crud application."});
-});
+
 
 //Require the students routes
 require('./routes/student.routes.js')(app);
+
+//add this:
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 // listen for requests
 app.listen(port, () => {
