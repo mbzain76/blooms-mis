@@ -26,7 +26,7 @@ class Grade2 extends Component{
  
 
     componentDidMount(){
-        axios.get('http://localhost:5000/students').then(res =>{
+        axios.get('/students').then(res =>{
             console.log(res)
             this.setState({
              students: res.data
