@@ -58,10 +58,7 @@ if (process.env.NODE_ENV === 'production') {
 };
 
 
-//add this:
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
+
 
 // listen for requests
 app.listen(port, () => {
