@@ -53,7 +53,7 @@ class NewStudentAdded extends Component{
 
     componentDidMount(){
        
-        axios.get(`http://localhost:5000/students/${identifier}`).then(res =>{
+        axios.get(`/students/${identifier}`).then(res =>{
             console.log(res)
             this.setState({
                 firstName: res.data.firstName,
