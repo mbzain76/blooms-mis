@@ -58,7 +58,7 @@ class AboutGaurdian extends Component{
 
    componentDidMount(){
        
-        axios.get(`http://localhost:5000/students/${id}`).then(res =>{
+        axios.get(`/students/${id}`).then(res =>{
             console.log(res)
             this.setState({
              studentDet: res.data
