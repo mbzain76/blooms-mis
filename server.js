@@ -48,15 +48,10 @@ mongoose.connect(MONGODB_URI, {
 //Require the students routes
 require('./routes/student.routes.js')(app);
 
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build')); // serve the static react app
-  app.get('*', (req, res) => { 
-    res.sendFile(path.join(__dirname, './client/build/index.html'));
-  });
-  console.log('Serving React App...');
-};
-
+// Right before your app.listen(), add this:
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 
 
 
