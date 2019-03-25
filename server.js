@@ -51,7 +51,7 @@ require('./routes/student.routes.js')(app);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build')); // serve the static react app
-  app.get(/^\/(?!api).*/, (req, res) => { // don't serve api routes to react app
+  app.get('*', (req, res) => { 
     res.sendFile(path.join(__dirname, './client/build/index.html'));
   });
   console.log('Serving React App...');
