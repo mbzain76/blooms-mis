@@ -228,7 +228,7 @@ class StudentFeesPage extends Component{
 
    componentDidMount(){
        
-        axios.get(`http://localhost:5000/students/${this.props.match.params.id}`).then(res =>{
+        axios.get(`/students/${this.props.match.params.id}`).then(res =>{
             console.log(res)
             this.setState({
              student: res.data
@@ -317,7 +317,7 @@ class StudentFeesPage extends Component{
 
  getSumOfCharges = () =>{
 let total = this.chooseLunch() + this.chooseDayCareFull() + this.chooseDayCareHalf() + this.chooseSwimming() + this.chooseTuition() + this.choosePiano() + this.chooseSkating() + this.chooseBallet() + this.chooseTae() + this.chooseGuitar() + this.chooseTransport1() + this.chooseTransport2() + this.chooseTransport3() + this.chooseTransport4() + this.chooseTransport5() + this.chooseTransport6()    
-axios.put('http://localhost:5000/students'+ id, {
+axios.put('/students'+ id, {
   class: this.state.student.class,
   firstName: this.state.student.firstName,
   middleName: this.state.student.middleName,
@@ -609,7 +609,7 @@ enterPressed = (event) =>{
   let code = event.keyCode || event.which;
   if(code === 13) { //13 is the enter keycode
     
-    axios.put(`http://localhost:5000/students/${id}`, {
+    axios.put(`/students/${id}`, {
         class: this.state.student.class,
         firstName: this.state.student.firstName,
         middleName: this.state.student.middleName,
@@ -670,7 +670,7 @@ enterPressed = (event) =>{
 
 getBalance = () =>{
   let dueBalance = this.getSumOfCharges() - this.state.amountPaid
-  axios.put('http://localhost:5000/students/' + id,{
+  axios.put('/students/' + id,{
     class: this.state.student.class,
     firstName: this.state.student.firstName,
     middleName: this.state.student.middleName,
