@@ -79,7 +79,7 @@ export default class AddTransportFees extends Component{
 
         const URL = `http://localhost:51492/api/experience`;
 
-       axios(`http://localhost:5000/students`, {
+       axios(`/students`, {
            method: 'POST',
            headers: {
              'content-type': 'application/json',
