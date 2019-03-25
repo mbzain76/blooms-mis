@@ -42,7 +42,7 @@ mongoose.connect(MONGODB_URI, {
     process.exit();
 });
 
-const port = process.env.PORT || 5000
+
 
 
 //Require the students routes
